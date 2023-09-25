@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Back End Assessment</title>
+  </head>
+
+
+<body>
+
+    <div class="container">
+      
+      <h1 style="padding-top: 5%;">Pick Your Fortune.</h1>
+      
+      <div class="instuctions">
+      
+      <p><br>Similar to the game "Would You Rather".  Fortune cookie style. Vote for which fortune you prefer
+      <br><br>
+      Press play to begin playing.
+      <br><br>
+      Keep pressing play to progress after voting.</p>
+      </div>
+
+      <br>
+
+  <div class="flex-container">
+    <div class="changing">
+      <img class="cookieimg" src="./images/fortunecookie.png" height="170px" width="250px">
+    </div>
+
+
+    <div class="changing3">
+
+        <p class="vs">vs</p>
+     
+    </div>
+
+    <div class="changing2">
+      <img class="cookieimg" src="./images/fortunecookie.png" height="150px" width="230px">  
+    </div>
+
+  
+  </div>
+
+    <div class="flex-container">
+      <div class="d-div1">
+        <p class="delete"><button id="delete" name="0" hidden><i class="fa fa-trash" aria-hidden="true"></i></button> 
+        </p>
+      </div>
+      <div>
+      </div>
+      <div class="d-div2">
+          <p class="delete2"><button id="delete2" name="1" hidden><i class="fa fa-trash" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="vt-div1">
+            <p class="votes"></p>
+        </div>
+        <div>
+        </div>
+        <div class="vt-div2">
+          <p class="votes2"></p>
+        </div>
+      </div>
+
+      <br>
+  
+  
+      <div class="flex-container">
+        <div class="vtbtn-1">
+          <button id="votebtn" name="0"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> Vote</button>
+        </div>
+                <div>
+                </div>
+        <div class="vtbtn-2">
+          <button id="votebtn2" name="1"> <i class="fa fa-thumbs-up" aria-hidden="true" ></i> Vote</button>
+        </div>
+      </div>
+
+<br><br><br>
+    <div class="flex-container">
+      <div>
+        <button id="playButton">Play</button>
+      </div>
+      <div>
+        <button id="resetButton">Reset</button>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="flex-container" style="background-color: gainsboro;;">
+      <div style="background-color: gainsboro;;">
+        <form id="form" class="form">
+      <input placeholder="Create your fortune." type="text" id="create" class="form-input" name="create" style="padding-left: 5%; width: 90%;">
+      </div>
+      <div style="background-color: gainsboro;">
+        <button type="submit" class="form-submit">Create</button>
+        </form>
+      </div>
+    </div>
+    <br><br><br<br>
+
+
+      </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
+
