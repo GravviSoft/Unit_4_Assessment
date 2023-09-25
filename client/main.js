@@ -63,7 +63,7 @@ playBtn.addEventListener('click', getCompliment)
 
 
 function deleteBtnOne(evt){
-  alert(`${baseURL}/api/${itemListId[0]}`)
+  // alert(`${baseURL}/api/${itemListId[0]}`)
   axios.delete(`${baseURL}/api/${itemListId[0]}`)
   .then(res =>{
       const data = res.data;
@@ -80,7 +80,7 @@ deleteText.addEventListener("click", deleteBtnOne)
 
 
 function deleteBtnTwo(evt){
-  alert(`${baseURL}/api/${itemListId[1]}`)
+  // alert(`${baseURL}/api/${itemListId[1]}`)
   axios.delete(`${baseURL}/api/${itemListId[1]}`)
   .then(res =>{
       const data = res.data;
