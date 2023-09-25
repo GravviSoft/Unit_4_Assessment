@@ -144,7 +144,7 @@ function voteButton2(evt){
     if (itemListId.length === 0){
       alert("You can't vote until you open the cookies")
     } else if (itemListId[evt.target.name] === undefined){
-       alert("unknown undefined error")
+       pass
     } else { 
       axios.put(`${baseURL}/api/${itemListId[evt.target.name]}`, {"votes": 1})
       .then(res => {
