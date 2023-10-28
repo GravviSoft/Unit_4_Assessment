@@ -10,11 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getModule } = require('./controller')
-const { deleteModule } = require('./controller')
-const { postModule } = require('./controller')
-const { putModule } = require('./controller')
-const { getModuleNumTwo } = require('./controller')
+const { getModule, deleteModule, postModule, putModule, getModuleNumTwo} = require('./controller')
 
 app.delete('/api/:id', deleteModule)
 
